@@ -62,14 +62,14 @@ const NavMenu = styled.div `
         align-items: center;
         padding: 0 12px;
         cursor: pointer;
-    }
-    img {
-        height:20px;
-    }
+    
+        img {
+            height:20px;
+             }
     span{
         font-size:13px;
         letter-spacing: 1.42px;
-        position: relative;
+        position: relative;   
 
         &:after{
             content:"";
@@ -79,8 +79,22 @@ const NavMenu = styled.div `
             left:0;
             right:0;
             bottom:-6px;
-        }
+            opacity:0;
+            transform-origin: left center;
+            transform:scaleX(0);
+                }
+            }
+        &:hover {
+            span:after{           
+            transform: scaleX(1);
+            opacity:1;
+                }
+            }
     }
+    
+    
+
+
 `
 const UserImg = styled.img `
     width: 48px;
