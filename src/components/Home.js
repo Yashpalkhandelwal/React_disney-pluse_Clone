@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import ImageSilder from './ImageSlider'
+import Viewers from './Viewers'
 
 function Home() {
     return (
         <Container>
             <ImageSilder/>
+            <Viewers/>
         </Container>
 
     )
